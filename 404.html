@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- Link Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <header id="header" class="pd-container">
+        <div class="header-row ">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header-main">
+                <ul>
+                    <li>
+                        <a href="./index.html">Trang chủ</a>
+                        <ul class="sub-menu">
+                            <li><a href="./index.html">Trang chủ 1</a></li>
+                            <li><a href="./index.html">Trang chủ 2</a></li>
+                            <li><a href="./index.html">Trang chủ 3</a></li>
+                            <li><a href="./index.html">Trang chủ 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./category.html">Tours</a>
+                        <ul class="sub-menu">
+                            <li><a href="./top-search.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a></li>
+                            <li><a href="./category.html">Danh sách chuyến tham quan - bộ lọc thanh bên</a></li>
+                            <li><a href="./category.html">Danh sách chuyến tham quan - Chế độ xem danh sách</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Điếm tham quan</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Danh sách điểm đến 1</a></li>
+                            <li><a href="#">Danh sách điểm đến 2</a></li>
+                            <li><a href="#">Chi tiết điểm đến</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                        <ul class="sub-menu">
+                            <li class="active"><a href="#">Tin tức - Chế độ xem danh sách</a></li>
+                            <li><a href="#">Tin tức - Chế độ hiển thị theo ô</a></li>
+                            <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Trang</a>
+                        <ul class="sub-menu">
+                            <li><a href="./about-us.html">Về chúng tôi</a></li>
+                            <li><a href="#">Biểu tượng</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li class="active"><a href="./404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="telephone">
+                        <a href="tel:0963339934">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +84 - 963 - 339 - 934
+                        </a>
+                    </li>
+
+                    <li class="login"><a href=""><i class="far fa-user"></i></i></i></a></li>
+                </ul>
+            </div>
+            <div class="btn-mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- menu mobile -->
+            <div id="mobile">
+                <div class="close"></div>
+                <div class="inside">
+                    <div class="mb-menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Trang chủ</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./index.html">Trang chủ 1</a></li>
+                                    <li><a href="#">Trang chủ 2</a></li>
+                                    <li><a href="#" class="active">Trang chủ 3</a></li>
+                                    <li><a href="#">Trang chủ 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./category.html">Tours</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./top-search.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a>
+                                    </li>
+                                    <li><a href="./category.html">Danh sách chuyến tham quan - bộ lọc thanh bên</a></li>
+                                    <li><a href="./category.html">Danh sách chuyến tham quan - Chế độ xem danh sách</a>
+                                    </li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Điếm tham quan</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="#">Danh sách điểm đến 1</a></li>
+                                    <li><a href="#">Danh sách điểm đến 2</a></li>
+                                    <li><a href="#">Chi tiết điểm đến</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Tin tức</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a class="active" href="#">Tin tức - Chế độ xem danh sách</a></li>
+                                    <li><a href="#">Tin tức - Chế độ hiển thị theo ô</a></li>
+                                    <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Trang</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                    <li><a href="#">Biểu tượng</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="./404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="btn-back">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <section class="error-404">
+        <div class="row">
+            <div class="container pd-container">
+                <div class="page-header">
+                    <div class="error-img404">
+                        <img src="./img/404.png" alt="">
+                    </div>
+                    <h1 class="page-title">Giáo sư! Có vẻ như bạn đang bị lạc</h1>
+                </div>
+                <div class="error-text">
+                    <span>Trang không tồn tại hoặc một số lỗi khác đã xảy ra. Tới </span>
+                    <a href="./index.html" class="return-home c-secondary"> Trang chủ</a>
+                </div>
+                <form class="search-form">
+                    <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN FOOTER -->
+    <footer>
+        <div class="footer footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="footer-col">
+                            <div class="footer-logo">
+                                <a href="./index.html"><img src="./img/logo-white.svg" alt=""></a>
+                            </div>
+                            <p>Nisi ut aliquip ex ea commodo irure dolor in reprehenderit in voluptatevelit
+                                esse cillum dolore eu fugiat nulla excepteur pariatur consequatute.</p>
+                            <div class="footer-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Safira Khang Điền, <br> Phường Phú Hữu, Quận 9, Tp.Thủ Đức, Tp.HCM.</span>
+                            </div>
+                            <div class="view-map"><a href="">Xem bản đồ<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Dịch vụ</h3>
+                            <ul>
+                                <li><a href="">Đặt trước</a></li>
+                                <li><a href="">Cho thuê ô tô</a></li>
+                                <li><a href="">Khách sạn</a></li>
+                                <li><a href="">Trivago</a></li>
+                                <li><a href="">TripAdvisor</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Khám phá</h3>
+                            <ul>
+                                <li><a href="">Thành phố Madrid</a></li>
+                                <li><a href="">Thành phố Stockholm</a></li>
+                                <li><a href="">Thành phố Roma</a></li>
+                                <li><a href="">Thành phố Thượng Hải</a></li>
+                                <li><a href="">Tokyo</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Nhận thông tin</h3>
+                            <p class="footer-text">Đăng ký nhận bản tin miễn phí và nhận chiết khấu 20% cho lần đặt
+                                phòng tiếp theo của bạn</p>
+                            <form action="" method="POST" class="form" id="form-1">
+                                <div class="form-group">
+                                    <input id="email" name="email" type="text" placeholder="Email của bạn"
+                                        class="form-control">
+                                </div>
+                                <button class="form-submit">Đăng ký
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container pd-container">
+                <div class="row">
+                    <div class="footer-bottom-wrap">
+                        <div class="fb-left">
+                            <p>Bản quyền © 2021 <a href="https://test.takecare.vn/">test.takecare.vn</a>. Đã đăng ký bản
+                                quyền</p>
+                        </div>
+                        <div class="fb-right">
+                            <ul>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Chính sách</a></li>
+                                <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                <li><a href="#">Trợ giúp</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Link jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

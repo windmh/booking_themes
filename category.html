@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- Link Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link jQuery UI Css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <header id="header" class="pd-container">
+        <div class="header-row ">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header-main">
+                <ul>
+                    <li>
+                        <a href="./index.html">Trang chủ</a>
+                        <ul class="sub-menu">
+                            <li><a href="./index.html">Trang chủ 1</a></li>
+                            <li><a href="./index.html">Trang chủ 2</a></li>
+                            <li><a href="./index.html">Trang chủ 3</a></li>
+                            <li><a href="./index.html">Trang chủ 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="./category.html">Tours</a>
+                        <ul class="sub-menu">
+                            <li><a href="./category.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a></li>
+                            <li class="active"><a href="#">Danh sách chuyến tham quan - bộ lọc thanh bên</a></li>
+                            <li><a href="#">Danh sách chuyến tham quan - Chế độ xem danh sách</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Điếm tham quan</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Danh sách điểm đến 1</a></li>
+                            <li><a href="#">Danh sách điểm đến 2</a></li>
+                            <li><a href="#">Chi tiết điểm đến</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                        <ul class="sub-menu">
+                            <li><a href="./blog-category.html">Tin tức - Chế độ xem danh sách</a></li>
+                            <li><a href="./blog-category.html">Tin tức - Chế độ hiển thị theo ô</a></li>
+                            <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Trang</a>
+                        <ul class="sub-menu">
+                            <li><a href="./about-us.html">Về chúng tôi</a></li>
+                            <li><a href="#">Biểu tượng</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="./404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="telephone">
+                        <a href="tel:0963339934">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +84 - 963 - 339 - 934
+                        </a>
+                    </li>
+
+                    <li class="login"><a href=""><i class="far fa-user"></i></i></i></a></li>
+                </ul>
+            </div>
+            <div class="btn-mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- menu mobile -->
+            <div id="mobile">
+                <div class="close"></div>
+                <div class="inside">
+                    <div class="mb-menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Trang chủ</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./index.html">Trang chủ 1</a></li>
+                                    <li><a href="#">Trang chủ 2</a></li>
+                                    <li><a href="#" class="active">Trang chủ 3</a></li>
+                                    <li><a href="#">Trang chủ 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./category.html">Tours</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./top-search.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a>
+                                    </li>
+                                    <li class="active"><a href="#">Danh sách chuyến tham quan - bộ lọc thanh bên</a>
+                                    </li>
+                                    <li><a href="#">Danh sách chuyến tham quan - Chế độ xem danh sách</a>
+                                    </li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Điếm tham quan</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="#">Danh sách điểm đến 1</a></li>
+                                    <li><a href="#">Danh sách điểm đến 2</a></li>
+                                    <li><a href="#">Chi tiết điểm đến</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Tin tức</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./blog-category.html">Tin tức - Chế độ xem danh sách</a></li>
+                                    <li><a href="./blog-category.html">Tin tức - Chế độ hiển thị theo ô</a></li>
+                                    <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Trang</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                    <li><a href="#">Biểu tượng</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="./404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="btn-back">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BEGIN BREADCRUMB -->
+    <section class="breadcrumb">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumb-contant">
+                    <div>
+                        <h1 class="breadcrumb-title">Danh mục booking</h1>
+                        <p id="breadcrumbs">
+                            <a href="./index.html">Trang chủ</a>
+                            <span class="breadcrumbs-icon">/</span>
+                            <span class="breadcrumb_last">Danh mục booking</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BREADCRUMB  -->
+
+    <!-- BEGIN SITE-CONTENT -->
+    <section class="site-content pd-container">
+        <div class="container">
+            <div class="row">
+                <div class="category">
+                    <div class="sidebar-search">
+                        <form id="search-form">
+                            <h2 class="search-title">Tìm kiếm điểm đặt trước</h2>
+                            <div class="input-group">
+                                <div class="field-search-group">
+                                    <div class="field-group-inner">
+                                        <div class="icon-search">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="field-search">
+                                            <div class="add_ids_title_value">Đặt địa điểm
+                                                <i class="fas"></i>
+                                                <ul class="add_ids_list">
+                                                    <li class="term_item_all">
+                                                        Tất cả các điểm đến
+                                                    </li>
+                                                    <li>
+                                                        Châu Phi
+                                                        <ul>
+                                                            <li class="term_item">Morocco</li>
+                                                            <li class="term_item">Tanzania</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Châu Mỹ
+                                                        <ul>
+                                                            <li class="term_item">Argentina</li>
+                                                            <li class="term_item">Canada</li>
+                                                            <li class="term_item">Columbia</li>
+                                                            <li class="term_item">Costa Rica</li>
+                                                            <li class="term_item">Mỹ</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Châu Á
+                                                        <ul>
+                                                            <li class="term_item">Campuchia</li>
+                                                            <li class="term_item">Nhật Bản</li>
+                                                            <li class="term_item">Nepal</li>
+                                                            <li class="term_item">Thái Lan</li>
+                                                            <li class="term_item">Việt Nam</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Châu Âu
+                                                        <ul>
+                                                            <li class="term_item">Pháp</li>
+                                                            <li class="term_item">Hy Lạp</li>
+                                                            <li class="term_item">Iceland</li>
+                                                            <li class="term_item">Italy</li>
+                                                            <li class="term_item">Thụy Sĩ</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-search-group">
+                                    <div class="field-group-inner">
+                                        <div class="icon-search">
+                                            <i class="fas fa-fan"></i>
+                                        </div>
+                                        <div class="field-search">
+                                            <div class="add_ids_title_value">Tất cả hoạt động
+                                                <i class="fas"></i>
+                                                <ul class="add_ids_list">
+                                                    <li class="term_item_all">
+                                                        Tất cả hoạt động
+                                                    </li>
+                                                    <li class="term_item">Bãi biển</li>
+                                                    <li class="term_item">Tham quan thành phố</li>
+                                                    <li class="term_item">Du lịch trên biển</li>
+                                                    <li class="term_item">Đi bộ đường dài</li>
+                                                    <li class="term_item">Lịch sử</li>
+                                                    <li class="term_item">Tham quan bảo tàng</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="field-search-group">
+                                    <div class="field-group-inner">
+                                        <div class="icon-search">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+                                        <div class="field-search">
+                                            <div class="search_date_wrapper">
+                                                <span class="search-date">
+                                                    <input type="text" id="datepicker" class="search_date"
+                                                        id="date_from" name="date_from" value=""
+                                                        placeholder="Date from">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-search-group">
+                                    <div class="field-group-inner">
+                                        <div class="icon-search">
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                        <div class="field-search">
+                                            <span class="search_guests_title_value">0</span>
+                                            <div class="search_guests_select">
+                                                <div class="input_select_field_guests">
+                                                    <span class="select_guests_value">0</span>
+                                                    <span class="select_guests_title">Người lớn</span>
+                                                    <span class="search_guests_plus btn-search-guests-change">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                    <span class="search_guests_minus btn-search-guests-change">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="input_select_field_guests">
+                                                    <span class="select_guests_value">0</span>
+                                                    <span class="select_guests_title">Thiếu niên</span>
+                                                    <span class="search_guests_plus btn-search-guests-change">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                    <span class="search_guests_minus btn-search-guests-change">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="input_select_field_guests">
+                                                    <span class="select_guests_value">0</span>
+                                                    <span class="select_guests_title">Trẻ em</span>
+                                                    <span class="search_guests_plus btn-search-guests-change">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                    <span class="search_guests_minus btn-search-guests-change">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="search_guests_apply">
+                                                    <button class="btn button btn-primary search_apply_btn">
+                                                        Chấp nhận
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <button name="submit" class="btn button btn-primary btn-search" value="1">
+                                    <i class="fas fa-search"></i> Tìm kiếm </button>
+                            </div>
+                        </form>
+
+                        <div class="filter-search">
+                            <h2 class="search-title">Bộ lọc</h2>
+                            <h3 class="title-price">Giá bán</h3>
+                            <div class="slider-box">
+                                <input type="text" id="priceRange" class="babe_range_price" readonly>
+                                <div id="price-range" class="slider"></div>
+                            </div>
+                            <div class="filter-title">
+                                <h3 class="title-price">Giá bán</h3>
+                            </div>
+                            <div class="rating-filter">
+                                <div class="rating-filter-inner">
+                                    <div class="input-square">
+                                        <input id="rating-filter-5" type="radio" class="rating-filter"
+                                            name="rating_value" value="5">
+                                        <label for="rating-filter-5">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="input-square">
+                                        <input id="rating-filter-4" type="radio" class="rating-filter"
+                                            name="rating_value" value=" 4">
+                                        <label for="rating-filter-4">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="input-square">
+                                        <input id="rating-filter-3" type="radio" class="rating-filter"
+                                            name="rating_value" value="3">
+                                        <label for="rating-filter-3">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="input-square">
+                                        <input id="rating-filter-2" type="radio" class="rating-filter"
+                                            name="rating_value" value=" 2">
+                                        <label for="rating-filter-2">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="input-square">
+                                        <input id="rating-filter-1" type="radio" class="rating-filter"
+                                            name="rating_value" value=" 1">
+                                        <label for="rating-filter-1">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="category-main">
+                        <div class="babe-search-results">
+                            <div class="babe-search-results-filters">
+                                <div class="count-posts">
+                                    <strong class="count">20</strong>
+                                    &nbsp;Chuyến
+                                </div>
+                                <div class="filter-sort">
+                                    <span>Lọc theo</span>
+                                    <div class="input-select-sort">
+                                        <i class="fas fa-sort-alpha-down"></i>
+                                    </div>
+                                    <div class="input_select_field">
+                                        <input type="text" class="input_select_input" value="Tiêu đề">
+                                        <ul class="input_select_list">
+                                            <li class="term_item term_item_selected" data-id="title_asc"
+                                                data-value="Title">
+                                                Tiêu đề</li>
+                                            <li class="term_item" data-id="price_asc" data-value="Price">Giá</li>
+                                            <li class="term_item" data-id="rating_asc" data-value="Rating">Đánh giá</li>
+                                        </ul>
+                                        <i class="fas"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="all-items-grid">
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <span class="item-label item-label-red">Giảm 10%</span>
+                                    <a class="item-thumb" href="./booking-detail.html">
+                                        <img src="./img/5c2e340c508523a216a4bba3_02-10-copy-820x520.jpg" alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>7 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>30</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>12</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">7 ngày ở Costa Rica - Cổ điển (Tự lái)</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$102.60</span>
+                                            <span class="price_old">$114</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <span class="item-label">Đặc sắc</span>
+                                    <a class="item-thumb" href="./booking-detail.html">
+                                        <img src="./img/5c284b5932e9aae035a5aed9_DSC05668-copy-820x520.jpg" alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>8 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>30</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>9</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Phiêu lưu Colombia</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$100</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <a class="item-thumb" href="./booking-detail.html">
+                                        <img src="./img/5c150fbcde252d9a3b26f63c_16297416313_6217f4e8a9_k-copy-820x520.jpg"
+                                            alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>11 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>50</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>9</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Tốt nhất của Argentina</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$97</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <a class="item-thumb" href="./booking-detail.html">
+                                        <img src="./img/5caf5b5a4230ad69dfa896e5_16710074567_8ed2f67f22_k-820x520.jpg"
+                                            alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>12 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>40</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>12</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Buenos Aires, Calafate, Chalten & Ushuaia</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$94</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <a class="item-thumb" href="./booking-detail.html">
+                                        <img src="./img/5c486ea739c52128a578315e_DSC04947-copy-820x520.jpg" alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>4 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>50</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>9</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Tham quan sông Caño Cristales</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$138</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="item-img">
+                                    <a class="item-thumb" href="#" class="item-thumb">
+                                        <img src="./img/5c50ac0708cc654bf60a5e7b_discovery-islands-176-kayaking-copy-820x520.jpg"
+                                            alt="">
+                                    </a>
+                                    <a class="item-img-wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-meta">
+                                        <div class="item-meta-left">
+                                            <span class="item-ngày">
+                                                <i class="far fa-calendar"></i>
+                                                <span>6 ngày</span>
+                                            </span>
+                                            <span class="item-user">
+                                                <i class="far fa-user"></i>
+                                                <span>60</span>
+                                            </span>
+                                        </div>
+                                        <div class="item-meta-right">
+                                            <div class="item-meta-media">
+                                                <a href="#">
+                                                    <i class="fas fa-camera"></i>
+                                                    <span>9</span>
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                                    <i class="fas fa-video"></i>
+                                                </a>
+                                            </div>
+                                            <div class="post-total-rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Chèo thuyền kayak ở Quần đảo Discovery</a>
+                                    </div>
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item_info_price">
+                                            <label>Từ</label>
+                                            <span>$110</span>
+                                        </div>
+                                        <a href="#" class="read-more-item">
+                                            Khám phá
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="babe_pager">
+                            <ul>
+                                <li class="page-number current"><a href="#">1</a></li>
+                                <li class="page-number"><a href="#">2</a></li>
+                                <li class="page-number"><a href="#">3</a></li>
+                                <li class="page-number next"><a href="#">Tiếp »</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SITE-CONTENT -->
+
+    <!-- BEGIN CONTACT -->
+    <div class="contact pd-container">
+        <div class="container">
+            <div class="row">
+                <div class="contact-wrap">
+                    <div class="contact-us">
+                        <p>Don’t wait any longer. Contact us!</p>
+                        <div class="contact-info">
+                            <ul>
+                                <li>
+                                    <a href="tel:+84963339934">
+                                        <span class="icon"><svg height="32" viewBox="0 0 32 32" width="32"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="m17.511 16.089c0 .884-.716 1.6-1.6 1.6s-1.6-.716-1.6-1.6.716-1.6 1.6-1.6 1.6.716 1.6 1.6z"
+                                                    fill="#dc834e"></path>
+                                                <path
+                                                    d="m18.578 23.289c-1.244 1.244-3.289 1.244-4.533 0l-5.333-5.333c-1.244-1.244-1.244-3.289 0-4.533l.8-.8-6.133-6.044c-3.733 3.733-3.733 9.867 0 13.689l8.356 8.356c3.733 3.733 9.867 3.733 13.689 0l-6.044-6.044-.8.711z"
+                                                    fill="#dc834e"></path>
+                                                <g class="fill-secondary">
+                                                    <path
+                                                        d="m15.911 0c-2.933 0-5.778.8-8.356 2.311-.267.178-.356.444-.178.711s.444.356.711.178c7.111-4.267 16.356-2.044 20.622 5.067 2.844 4.8 2.844 10.756 0 15.556-.178.267-.089.622.178.711.089.089.178.089.267.089.178 0 .356-.089.444-.267 4.622-7.644 2.133-17.511-5.511-22.133-2.4-1.422-5.333-2.222-8.178-2.222z">
+                                                    </path>
+                                                    <path
+                                                        d="m15.911 4.267c.267 0 .533-.267.533-.533v-1.6c0-.267-.267-.533-.533-.533s-.533.267-.533.533v1.6c0 .356.178.533.533.533z">
+                                                    </path>
+                                                    <path
+                                                        d="m9.689 5.956c.267 0 .533-.267.533-.533 0-.089 0-.178-.089-.267l-.8-1.422c-.089-.267-.444-.356-.711-.178s-.356.444-.178.711l.8 1.422c.089.178.267.267.444.267z">
+                                                    </path>
+                                                    <path
+                                                        d="m28.267 22.667-1.422-.8c-.267-.178-.622-.089-.711.178-.178.267-.089.622.178.711l1.422.8c.267.178.622.089.711-.178.178-.267.089-.622-.178-.711z">
+                                                    </path>
+                                                    <path
+                                                        d="m27.733 16.089c0 .267.267.533.533.533h1.6c.267 0 .533-.267.533-.533s-.267-.533-.533-.533h-1.6c-.356 0-.533.267-.533.533z">
+                                                    </path>
+                                                    <path
+                                                        d="m27.733 8.711-1.422.8c-.267.178-.356.444-.178.711s.444.356.711.178l1.422-.8c.267-.178.356-.444.178-.711s-.444-.356-.711-.178z">
+                                                    </path>
+                                                    <path
+                                                        d="m22.044 5.956c.178 0 .356-.089.444-.267l.8-1.422c.178-.267.089-.533-.178-.711s-.622-.089-.711.178l-.8 1.422c-.178.267-.089.622.178.711.089.089.178.089.267.089z">
+                                                    </path>
+                                                    <path
+                                                        d="m13.689 16.089c0 1.156.978 2.133 2.133 2.133.978 0 1.867-.622 2.044-1.6h3.822c.267 0 .533-.267.533-.533s-.267-.533-.533-.533h-3.822c-.178-.8-.8-1.333-1.511-1.511v-.089-8c0-.267-.267-.533-.533-.533s-.533.267-.533.533v8.089.089c-.889.178-1.6.978-1.6 1.956zm2.222-1.067c.622 0 1.067.444 1.067 1.067s-.444 1.067-1.067 1.067c-.622 0-1.067-.444-1.067-1.067-.089-.533.444-1.067 1.067-1.067z">
+                                                    </path>
+                                                    <path
+                                                        d="m27.289 25.244-4.533-4.533c-.622-.622-1.689-.622-2.311 0l-2.311 2.311c-1.067 1.067-2.756 1.067-3.822 0l-5.333-5.333c-1.067-1.067-1.067-2.756 0-3.822l2.311-2.311c.622-.622.622-1.689 0-2.311l-4.533-4.533c-.622-.622-1.6-.622-2.311 0l-1.422 1.511c-4 4-4 10.4 0 14.4l8.356 8.356c4 4 10.4 4 14.4 0l1.511-1.511c.622-.622.622-1.6 0-2.222zm-22.045-19.822c.178-.178.533-.178.8 0l4.533 4.533c.089.089.178.267.178.356 0 .178-.089.267-.178.356l-1.156 1.156-5.333-5.333 1.156-1.067zm6.845 22.845-8.356-8.356c-3.378-3.378-3.556-8.889-.356-12.533l5.333 5.333-.356.356c-1.511 1.511-1.511 3.822 0 5.333l5.333 5.333c1.511 1.511 3.822 1.511 5.333 0l.356-.356 5.333 5.333c-3.644 3.111-9.156 2.933-12.622-.444zm14.489-1.511-1.156 1.156-5.333-5.333 1.156-1.156c.178-.178.533-.178.8 0l4.533 4.533c.178.178.178.533 0 .8z">
+                                                    </path>
+                                                </g>
+                                            </svg></span>
+                                        +(84) 963 - 339 - 934
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@takecare.vn">
+                                        <span class="icon"><svg height="32" viewBox="0 0 32 32" width="32"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g fill="#dc834e">
+                                                    <path
+                                                        d="m18.933 7.467 1.689 1.511c.444.356.978.356 1.422 0l1.689-1.511 7.733-6.933h-20.267l7.733 6.933z">
+                                                    </path>
+                                                    <path d="m11.2.533v13.867l7.733-6.933-7.733-6.933z"></path>
+                                                    <path d="m31.467 14.4v-13.867l-7.733 6.933 7.733 6.933z"></path>
+                                                    <path
+                                                        d="m23.733 7.467-1.689 1.511c-.444.356-.978.356-1.422 0l-1.689-1.511-7.733 6.933h20.267l-7.733-6.933z">
+                                                    </path>
+                                                </g>
+                                                <path
+                                                    d="m8.267 24.533 1.689 1.511c.444.356.978.356 1.422 0l1.689-1.511 7.733-6.933h-20.267l7.733 6.933z"
+                                                    fill="#bfc9e0"></path>
+                                                <path d="m.533 17.6v13.867l7.733-6.933-7.733-6.933z" fill="#bfc9e0">
+                                                </path>
+                                                <path
+                                                    d="m13.067 24.533-1.689 1.511c-.444.356-.978.356-1.422 0l-1.689-1.511-7.733 6.933h20.267l-7.733-6.933z"
+                                                    fill="#bfc9e0"></path>
+                                                <path d="m20.8 31.467v-13.867l-7.733 6.933 7.733 6.933z" fill="#bfc9e0">
+                                                </path>
+                                                <path
+                                                    d="m31.467 0h-20.267c-.267 0-.533.267-.533.533v13.867c0 .267.267.533.533.533h20.267c.267 0 .533-.267.533-.533v-13.867c0-.267-.267-.533-.533-.533zm-9.778 8.533c-.178.178-.533.178-.711 0l-8.356-7.467h17.511zm-3.556-1.066-6.4 5.778v-11.556zm.8.711 1.333 1.156c.622.533 1.511.533 2.133 0l1.333-1.156 6.311 5.689h-17.422l6.311-5.689zm5.6-.711 6.4-5.778v11.467z"
+                                                    class="fill-secondary"></path>
+                                                <path
+                                                    d="m.533 16c.267 0 .533-.267.533-.533v-6.933c0-.267.267-.533.533-.533h6.222l-.711.711c-.178.178-.178.533 0 .711s.533.178.711 0l1.6-1.6c.178-.178.178-.533 0-.711l-1.6-1.6c-.178-.267-.533-.178-.711 0s-.178.533 0 .711l.711.711h-6.222c-.889 0-1.6.711-1.6 1.6v6.933c0 .267.267.533.533.533z"
+                                                    class="fill-secondary"></path>
+                                                <path
+                                                    d="m31.467 16c-.267 0-.533.267-.533.533v6.933c0 .267-.267.533-.533.533h-6.222l.711-.711c.178-.178.178-.533 0-.711s-.533-.178-.711 0l-1.6 1.6c-.178.178-.178.533 0 .711l1.6 1.6c.178.178.533.178.711 0s.178-.533 0-.711l-.711-.711h6.222c.889 0 1.6-.711 1.6-1.6v-6.933c0-.267-.267-.533-.533-.533z"
+                                                    class="fill-secondary"></path>
+                                                <path
+                                                    d="m20.8 17.067h-20.267c-.267 0-.533.267-.533.533v13.867c0 .267.267.533.533.533h20.267c.267 0 .533-.267.533-.533v-13.867c0-.267-.267-.533-.533-.533zm-9.778 8.533c-.178.178-.533.178-.711 0l-8.356-7.467h17.511zm-3.555-1.067-6.4 5.778v-11.556zm.8.711 1.333 1.156c.622.533 1.511.533 2.133 0l1.333-1.156 6.311 5.689h-17.422l6.311-5.689zm5.6-.711 6.4-5.778v11.467z"
+                                                    class="fill-secondary"></path>
+                                            </svg></span>
+                                        info@takecare.vn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="follow-us">
+                        <p>Follow us</p>
+                        <ul>
+                            <li><a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT -->
+
+
+    <!-- BEGIN FOOTER -->
+    <footer>
+        <div class="footer footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="footer-col">
+                            <div class="footer-logo">
+                                <a href="./index.html"><img src="./img/logo-white.svg" alt=""></a>
+                            </div>
+                            <p>Nisi ut aliquip ex ea commodo irure dolor in reprehenderit in voluptatevelit
+                                esse cillum dolore eu fugiat nulla excepteur pariatur consequatute.</p>
+                            <div class="footer-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Safira Khang Điền, <br> Phường Phú Hữu, Quận 9, Tp.Thủ Đức, Tp.HCM.</span>
+                            </div>
+                            <div class="view-map"><a href="">Xem bản đồ<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Dịch vụ</h3>
+                            <ul>
+                                <li><a href="">Đặt trước</a></li>
+                                <li><a href="">Cho thuê ô tô</a></li>
+                                <li><a href="">Khách sạn</a></li>
+                                <li><a href="">Trivago</a></li>
+                                <li><a href="">TripAdvisor</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Khám phá</h3>
+                            <ul>
+                                <li><a href="">Thành phố Madrid</a></li>
+                                <li><a href="">Thành phố Stockholm</a></li>
+                                <li><a href="">Thành phố Roma</a></li>
+                                <li><a href="">Thành phố Thượng Hải</a></li>
+                                <li><a href="">Tokyo</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Nhận thông tin</h3>
+                            <p class="footer-text">Đăng ký nhận bản tin miễn phí và nhận chiết khấu 20% cho lần đặt
+                                phòng tiếp theo của bạn</p>
+                            <form action="" method="POST" class="form" id="form-1">
+                                <div class="form-group">
+                                    <input id="email" name="email" type="text" placeholder="Email của bạn"
+                                        class="form-control">
+                                </div>
+                                <button class="form-submit">Đăng ký
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container pd-container">
+                <div class="row">
+                    <div class="footer-bottom-wrap">
+                        <div class="fb-left">
+                            <p>Bản quyền © 2021 <a href="https://takecare.vn/">takecare.vn</a>. Đã đăng ký bản
+                                quyền</p>
+                        </div>
+                        <div class="fb-right">
+                            <ul>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Chính sách</a></li>
+                                <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                <li><a href="#">Trợ giúp</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Link jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

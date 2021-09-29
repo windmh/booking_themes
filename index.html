@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- Link Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Link jQuery UI Css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <header id="header" class="pd-container">
+        <div class="header-row ">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header-main">
+                <ul>
+                    <li class="active">
+                        <a href="./index.html">Trang chủ</a>
+                        <ul class="sub-menu">
+                            <li class="active"><a href="./index.html">Trang chủ 1</a></li>
+                            <li><a href="./index.html">Trang chủ 2</a></li>
+                            <li><a href="./index.html">Trang chủ 3</a></li>
+                            <li><a href="./index.html">Trang chủ 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./category.html">Tours</a>
+                        <ul class="sub-menu">
+                            <li><a href="./top-search.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a></li>
+                            <li><a href="./category.html">Danh sách chuyến tham quan - bộ lọc thanh bên</a></li>
+                            <li><a href="./category.html">Danh sách chuyến tham quan - Chế độ xem danh sách</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                            <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Điếm tham quan</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Danh sách điểm đến 1</a></li>
+                            <li><a href="#">Danh sách điểm đến 2</a></li>
+                            <li><a href="#">Chi tiết điểm đến</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                        <ul class="sub-menu">
+                            <li><a href="./blog-category.html">Tin tức - Chế độ xem danh sách</a></li>
+                            <li><a href="./blog-category.html">Tin tức - Chế độ hiển thị theo ô</a></li>
+                            <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Trang</a>
+                        <ul class="sub-menu">
+                            <li><a href="./about-us.html">Về chúng tôi</a></li>
+                            <li><a href="#">Biểu tượng</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="./404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="telephone">
+                        <a href="tel:0963339934">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +84 - 963 - 339 - 934
+                        </a>
+                    </li>
+
+                    <li class="login"><a href=""><i class="far fa-user"></i></i></i></a></li>
+                </ul>
+            </div>
+            <div class="btn-mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- menu mobile -->
+            <div id="mobile">
+                <div class="close"></div>
+                <div class="inside">
+                    <div class="mb-menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Trang chủ</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./index.html">Trang chủ 1</a></li>
+                                    <li><a href="#">Trang chủ 2</a></li>
+                                    <li><a href="#" class="active">Trang chủ 3</a></li>
+                                    <li><a href="#">Trang chủ 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./category.html">Tours</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./top-search.html">Danh sách chuyến tham quan - tiềm kiếm hàng đầu</a>
+                                    </li>
+                                    <li><a href="./category.html">Danh sách chuyến tham quan - bộ lọc thanh bên</a></li>
+                                    <li><a href="./category.html">Danh sách chuyến tham quan - Chế độ xem danh sách</a>
+                                    </li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 1</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 2</a></li>
+                                    <li><a href="#">Chuyến tham quan Đơn - Bố cục 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Điếm tham quan</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="#">Danh sách điểm đến 1</a></li>
+                                    <li><a href="#">Danh sách điểm đến 2</a></li>
+                                    <li><a href="#">Chi tiết điểm đến</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Tin tức</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./blog-category.html">Tin tức - Chế độ xem danh sách</a></li>
+                                    <li><a href="./blog-category.html">Tin tức - Chế độ hiển thị theo ô</a></li>
+                                    <li><a href="./blog-detail.html">Tin tức - Bài đăng đơn</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Trang</a>
+                                <button class="dropdown-toggle">
+                                    <i class="fas"></i>
+                                </button>
+                                <ul>
+                                    <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                    <li><a href="#">Biểu tượng</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="./404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="btn-back">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BEGIN BANNER -->
+    <section class="banner">
+        <div class="banner-container ">
+            <div class="swiper-container banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="background-slideshow__slide__image" style="background-image:url(./img/h2_bg.jpg);">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="background-slideshow__slide__image"
+                            style="background-image:url(./img/home4_image-4.jpg);">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="background-slideshow__slide__image"
+                            style="background-image:url(./img/home4_image-5.jpg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-row">
+                <div class="banner-inner">
+                    <div class="banner-content">
+                        <h2>Tận hưởng kì nghỉ của bạn</h2>
+                        <p>Khám phá những địa điểm tuyệt vời với những ưu đãi độc quyền</p>
+                    </div>
+                    <div class="banner-search-form">
+                        <div class="container">
+                            <form id="search-form">
+                                <div class="input-group">
+                                    <div class="field-search-group">
+                                        <div class="field-group-inner">
+                                            <div class="icon-search">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="field-search">
+                                                <h4 class="field-title">Các điểm đến</h4>
+                                                <div class="add_ids_title_value">Bạn đi đâu?
+                                                    <i class="fas"></i>
+                                                    <ul class="add_ids_list">
+                                                        <li class="term_item_all">
+                                                            Tất cả các điểm đến
+                                                        </li>
+                                                        <li>
+                                                            Châu Phi
+                                                            <ul>
+                                                                <li class="term_item">Morocco</li>
+                                                                <li class="term_item">Tanzania</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Châu Mỹ
+                                                            <ul>
+                                                                <li class="term_item">Argentina</li>
+                                                                <li class="term_item">Canada</li>
+                                                                <li class="term_item">Columbia</li>
+                                                                <li class="term_item">Costa Rica</li>
+                                                                <li class="term_item">Mỹ</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Châu Á
+                                                            <ul>
+                                                                <li class="term_item">Campuchia</li>
+                                                                <li class="term_item">Nhật Bản</li>
+                                                                <li class="term_item">Nepal</li>
+                                                                <li class="term_item">Thái Lan</li>
+                                                                <li class="term_item">Việt Nam</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Châu Âu
+                                                            <ul>
+                                                                <li class="term_item">Pháp</li>
+                                                                <li class="term_item">Hy Lạp</li>
+                                                                <li class="term_item">Iceland</li>
+                                                                <li class="term_item">Italy</li>
+                                                                <li class="term_item">Thụy Sĩ</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field-search-group">
+                                        <div class="field-group-inner">
+                                            <div class="icon-search">
+                                                <i class="fas fa-fan"></i>
+                                            </div>
+                                            <div class="field-search">
+                                                <h4 class="field-title">Hoạt động</h4>
+                                                <div class="add_ids_title_value">Tất cả hoạt động
+                                                    <i class="fas"></i>
+                                                    <ul class="add_ids_list">
+                                                        <li class="term_item_all">
+                                                            Tất cả hoạt động
+                                                        </li>
+                                                        <li class="term_item">Bãi biển</li>
+                                                        <li class="term_item">Tham quan thành phố</li>
+                                                        <li class="term_item">Du lịch trên biển</li>
+                                                        <li class="term_item">Đi bộ đường dài</li>
+                                                        <li class="term_item">Lịch sử</li>
+                                                        <li class="term_item">Tham quan bảo tàng</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="field-search-group">
+                                        <div class="field-group-inner">
+                                            <div class="icon-search">
+                                                <i class="far fa-calendar-alt"></i>
+                                            </div>
+                                            <div class="field-search">
+                                                <h4 class="field-title">Khi nào</h4>
+                                                <div class="search_date_wrapper">
+                                                    <span class="search-date">
+                                                        <input type="text" id="datepicker" class="search_date"
+                                                            id="date_from" name="date_from" value=""
+                                                            placeholder="Date from">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field-search-group">
+                                        <div class="field-group-inner">
+                                            <div class="icon-search">
+                                                <i class="far fa-user"></i>
+                                            </div>
+                                            <div class="field-search">
+                                                <h4 class="field-title">Khách</h4>
+                                                <span class="search_guests_title_value">Khách</span>
+                                                <div class="search_guests_select">
+                                                    <div class="input_select_field_guests">
+                                                        <span class="select_guests_value">0</span>
+                                                        <span class="select_guests_title">Người lớn</span>
+                                                        <span class="search_guests_plus btn-search-guests-change">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                        <span class="search_guests_minus btn-search-guests-change">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="input_select_field_guests">
+                                                        <span class="select_guests_value">0</span>
+                                                        <span class="select_guests_title">Thiếu niên</span>
+                                                        <span class="search_guests_plus btn-search-guests-change">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                        <span class="search_guests_minus btn-search-guests-change">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="input_select_field_guests">
+                                                        <span class="select_guests_value">0</span>
+                                                        <span class="select_guests_title">Trẻ em</span>
+                                                        <span class="search_guests_plus btn-search-guests-change">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                        <span class="search_guests_minus btn-search-guests-change">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="search_guests_apply">
+                                                        <button class="btn button btn-primary search_apply_btn">
+                                                            Chấp nhận
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <button name="submit" class="btn button btn-primary btn-search" value="1">
+                                        <i class="fas fa-search"></i> Tìm kiếm </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BANNER -->
+
+    <!-- BEGIN RECOMMENDED -->
+    <section class="recommended">
+        <div class="background-overlay"></div>
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Có gì mới</h3>
+                    <h2>Được đề xuất</h2>
+                </div>
+                <div class="recommended-gird">
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c486ea739c52128a578315e_DSC04947-copy-820x520.jpg" alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>4 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>50</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Tham quan sông Caño Cristales</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$138</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <span class="item-label">Đặc sắc</span>
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c62cf53ebd1d70c3b6378fd_candre-mandawe-770529-unsplash-copy-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>7 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>40</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Thác nước, mạch nước phun và sông băng</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$100</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c1e472975fcbd26856e1b0b_Kilimanjaro-sunrise-copy-820x520.jpg" alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>9 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>20</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Núi Kilimanjaro, Tuyến đường Machame</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$161</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html" class="item-thumb">
+                                <img src="./img/5c50ac0708cc654bf60a5e7b_discovery-islands-176-kayaking-copy-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>6 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>60</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Chèo thuyền kayak ở Quần đảo Discovery</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$110</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c2f7613445ea987b8b776eb_ammie-ngo-690967-unsplash-copy-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>7 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>60</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Tin hoa Việt Nam từ Nam ra Bắc</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$122</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5d963438227202fc87ae93b5_bharat-patil-GH-ArMqYx9M-unsplash-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-meta">
+                                <div class="item-meta-left">
+                                    <span class="item-ngày">
+                                        <i class="far fa-calendar"></i>
+                                        <span>8 ngày</span>
+                                    </span>
+                                    <span class="item-user">
+                                        <i class="far fa-user"></i>
+                                        <span>30</span>
+                                    </span>
+                                </div>
+                                <div class="item-meta-right">
+                                    <div class="item-meta-media">
+                                        <a href="#">
+                                            <i class="fas fa-camera"></i>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=3FqtRWLlg9k">
+                                            <i class="fas fa-video"></i>
+                                        </a>
+                                    </div>
+                                    <div class="post-total-rating">
+                                        <ul>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-title">
+                                <a href="./booking-detail.html">Tour of Mont Blanc 8 ngày</a>
+                            </div>
+                            <div class="item-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Vườn quốc gia Bryce Canyon, Hoa Kỳ</span>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item_info_price">
+                                    <label>Từ</label>
+                                    <span>$138</span>
+                                </div>
+                                <a href="./booking-detail.html" class="read-more-item">
+                                    Khám phá
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-view-tour">
+                    <a href="">Xem tất cả
+                        <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END RECOMMENDED -->
+
+    <!-- BEGIN SERVICE -->
+    <section class="service" style="background-image: url(./img/h3-img-1_optimized-1.png);">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Tại sao là chúng tôi</h3>
+                    <h2>Chúng tôi làm cho tất cả quá trình trở nên dễ dàng</h2>
+                </div>
+                <div class="service-main">
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-shoe-prints"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Đại lý du lịch tốt nhất</h3>
+                                    <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Địa điểm đẹp</h3>
+                                    <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-first-aid"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Tin cậy & An toàn</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available majority</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-umbrella-beach"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Du lịch đam mê</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-star-of-david"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Đảm bảo giá tốt nhất</h3>
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat but majority</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <div class="service-box">
+                                <div class="service-icon">
+                                    <span><i class="fas fa-ticket-alt"></i></span>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Đặt chỗ nhanh</h3>
+                                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SERVICE -->
+
+    <!-- BEGIN DISCOUNTS -->
+    <section class="discounts">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Đừng bỏ lỡ</h3>
+                    <h2>Ưu đãi & Giảm giá</h2>
+                </div>
+
+                <div class="discounts-grid">
+                    <div class="grid-item grid-item-dis">
+                        <div class="discount-box" style="background-image: url(./img/h3-img-11_optimized.png);">
+                            <div class="background-overlay"></div>
+                            <div class="discount-block">
+                                <div class="discount-text-editor">
+                                    <h2>Giảm giá</h2>
+                                </div>
+                                <div class="discount-image">
+                                    <img src="./img/h2_50off.png" alt="">
+                                </div>
+                            </div>
+                            <div class="discount-content">
+                                <h2>Đặt sớm để tiết kiệm</h2>
+                                <p>Được giảm giá từ 15% trở lên giữa các kỳ nghỉ<br>bây giờ và ngày 4 tháng 1 năm 2021
+                                </p>
+                                <div class="btn-booking">
+                                    <a href="">Đặt bây giờ
+                                        <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c486ea739c52128a578315e_DSC04947-copy-820x520.jpg" alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <div class="item-text">
+                                <div class="post-total-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Tham quan sông Caño Cristales</a>
+                                    </div>
+                                    <div class="item_info_price">
+                                        <label>Từ</label>
+                                        <span>$122</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <span class="item-label">Đặc sắc</span>
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c62cf53ebd1d70c3b6378fd_candre-mandawe-770529-unsplash-copy-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <div class="item-text">
+                                <div class="post-total-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Thác nước, mạch nước phun và sông băng</a>
+                                    </div>
+                                    <div class="item_info_price">
+                                        <label>Từ</label>
+                                        <span>$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html">
+                                <img src="./img/5c1e472975fcbd26856e1b0b_Kilimanjaro-sunrise-copy-820x520.jpg" alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <div class="item-text">
+                                <div class="post-total-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Núi Kilimanjaro, Tuyến đường Machame</a>
+                                    </div>
+                                    <div class="item_info_price">
+                                        <label>Từ</label>
+                                        <span>$161</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-img">
+                            <a class="item-thumb" href="./booking-detail.html" class="item-thumb">
+                                <img src="./img/5c50ac0708cc654bf60a5e7b_discovery-islands-176-kayaking-copy-820x520.jpg"
+                                    alt="">
+                            </a>
+                            <a class="item-img-wishlist" href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <div class="item-text">
+                                <div class="post-total-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-title">
+                                        <a href="./booking-detail.html">Chèo thuyền kayak ở Quần đảo Discovery</a>
+                                    </div>
+                                    <div class="item_info_price">
+                                        <label>Từ</label>
+                                        <span>$110</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discount-text">
+                    <p>Cần nguồn cảm hứng cho chuyến đi tiếp theo của bạn? Khám phá <a href="#"> những chuyến du lịch
+                            độc đáo</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN REVIEW -->
+    <section class="review">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Lời đánh giá</h3>
+                    <h2>Phản hồi khách hàng</h2>
+                </div>
+                <div class="review-contant">
+                    <div class="review-left">
+                        <img src="./img/h1_quote-1.png" alt="">
+                    </div>
+                    <div class="review-center">
+                        <!-- Swiper -->
+                        <div class="swiper-container swiper-review">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review-content">
+                                        <div class="content">
+                                            <p> “Đây là một chuyến đi tuyệt vời! Có rất nhiều điểm nổi bật ... nhà lãnh
+                                                đạo xuất sắc, tốt bụng, kiên nhẫn, tuyệt vời của chúng ta, Gustavo !!
+                                                Đúng là một vị thánh tuyệt đối. Anh ấy rất có tổ chức và sâu sắc! ”</p>
+                                        </div>
+                                        <div class="details">
+                                            <div class="image-wrap">
+                                                <div class="icon">
+                                                    <i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <div class="image">
+                                                    <img src="./img/h3-img-box-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="name-wrap">
+                                                <div class="post-total-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3 class="name">Melisa Joan H.</h3>
+                                                <h4 class="job">New York, USA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-content">
+                                        <div class="content">
+                                            <p>“Đây là một chuyến đi tuyệt vời! Có rất nhiều điểm nổi bật ... nhà lãnh
+                                                đạo xuất sắc, tốt bụng, kiên nhẫn, tuyệt vời của chúng ta, Gustavo !!
+                                                Đúng là một vị thánh tuyệt đối. Anh ấy rất có tổ chức và sâu sắc! ”</p>
+                                        </div>
+                                        <div class="details">
+                                            <div class="image-wrap">
+                                                <div class="icon">
+                                                    <i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <div class="image">
+                                                    <img src="./img/about_image-4-2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="name-wrap">
+                                                <div class="post-total-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3 class="name">Roselin D.</h3>
+                                                <h4 class="job">New York, USA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-content">
+                                        <div class="content">
+                                            <p>“Đây là một chuyến đi tuyệt vời! Có rất nhiều điểm nổi bật ... nhà lãnh
+                                                đạo xuất sắc, tốt bụng, kiên nhẫn, tuyệt vời của chúng ta, Gustavo !!
+                                                Đúng là một vị thánh tuyệt đối. Anh ấy rất có tổ chức và sâu sắc! ”</p>
+                                        </div>
+                                        <div class="details">
+                                            <div class="image-wrap">
+                                                <div class="icon">
+                                                    <i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <div class="image">
+                                                    <img src="./img/about_image-5-2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="name-wrap">
+                                                <div class="post-total-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3 class="name">Cleveland A.</h3>
+                                                <h4 class="job">New York, USA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="review-right">
+                        <img src="./img/h1_quote-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- END REVIEW -->
+
+    <!-- BEGIN DESTINATION -->
+    <section class="destination">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Sự lựa chọn của bạn</h3>
+                    <h2>Các điểm đến</h2>
+                </div>
+            </div>
+        </div>
+        <div class="destination-main">
+            <div class="container pd-container">
+                <div class="row">
+                    <div class="destionation-container">
+                        <div class="des-col">
+                            <div class="des-col-wrap">
+                                <div class="des-location">
+                                    <div class="location-item">
+                                        <a href="">
+                                            <div class="thumb-location">
+                                                <img src="./img/destination-02.jpg" alt="">
+                                            </div>
+                                            <div class="content-location">
+                                                <h2 class="title-tours">Việt Nam</h2>
+                                                <span>1 Chuyến</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des-col">
+                            <div class="des-col-wrap">
+                                <div class="des-location">
+                                    <div class="location-item">
+                                        <a href="">
+                                            <div class="thumb-location">
+                                                <img src="./img/Destination_image-2.jpg" alt="">
+                                            </div>
+                                            <div class="content-location">
+                                                <h2 class="title-tours">Nepal</h2>
+                                                <span>2 Chuyến</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des-col">
+                            <div class="des-col-wrap">
+                                <div class="des-location">
+                                    <div class="location-item">
+                                        <a href="">
+                                            <div class="thumb-location">
+                                                <img src="./img/destination-03.jpg" alt="">
+                                            </div>
+                                            <div class="content-location">
+                                                <h2 class="title-tours">Marocco</h2>
+                                                <span>3 Chuyến</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des-col">
+                            <div class="des-col-wrap">
+                                <div class="des-location">
+                                    <div class="location-item">
+                                        <a href="">
+                                            <div class="thumb-location">
+                                                <img src="./img/destination-04.jpg" alt="">
+                                            </div>
+                                            <div class="content-location">
+                                                <h2 class="title-tours">Tanzania</h2>
+                                                <span>2 Chuyến</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des-col">
+                            <div class="des-col-wrap">
+                                <div class="des-location">
+                                    <div class="location-item">
+                                        <a href="">
+                                            <div class="thumb-location">
+                                                <img src="./img/destination-05.jpg" alt="">
+                                            </div>
+                                            <div class="content-location">
+                                                <h2 class="title-tours">Thái Lan</h2>
+                                                <span>5 Chuyến</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END DESTINATION -->
+
+    <!-- BEGIN ABOUT -->
+    <section class="about">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="about-wrap">
+                    <div class="about-left">
+                        <div class="about-image">
+                            <img src="./img/about_image-1.1.png" alt="">
+                        </div>
+                        <div class="about-image-abs">
+                            <img src="./img/about_image-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="section-title">
+                            <h3>Kế hoạch</h3>
+                            <h2>Chúng tôi giúp bạn lập kế hoạch cho hành trình của mình</h2>
+                        </div>
+                        <div class="about-text">
+                            <p class="text-1">Lorem ipsum dolor sit amet, consectetur adipiicing elit, sed do eiusmod
+                                tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <p class="text-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class="button-more">
+                            <a href="">
+                                Tìm hiểu thêm
+                                <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- BEGIN OUR BLOG -->
+    <section class="our-blog">
+        <div class="container pd-container">
+            <div class="row">
+                <div class="section-title">
+                    <h3>Tin tức</h3>
+                    <h2>Lời khuyên khi đi du lịch</h2>
+                </div>
+
+                <div class="our-blog-main">
+                    <!-- Swiper -->
+                    <div class="swiper-container our-blog-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="post-inner">
+                                    <div class="post-thumb">
+                                        <a href="./blog-detail.html">
+                                            <img src="./img/blog-9-768x768.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="entry-content-wrapper">
+                                            <div class="entry-header">
+                                                <span class="categories-link"><a href="">Chưa được phân loại</a></span>
+                                                <h3 class="entry-title"><a href="./blog-detail.html">Giới thiệu thành
+                                                        phố tuyệt vời
+                                                        này</a>
+                                                </h3>
+                                            </div>
+                                            <div class="entry-bottom">
+                                                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, giống
+                                                    như những buổi sáng mùa xuân ngọt ngào mà tôi…</p>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <span class="posted-on">
+                                                    <i class="far fa-calendar"></i>
+                                                    <a href="">
+                                                        <time class="entry-date">11/09/2020</time>
+                                                    </a>
+                                                </span>
+                                                <span class="post-author">
+                                                    <i class="far fa-user"></i>
+                                                    Bởi <a href="">admin</a>
+                                                </span>
+                                                <span class="post-comments">
+                                                    <i class="far fa-comments"></i>
+                                                    <a href="">0</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="post-inner">
+                                    <div class="post-thumb">
+                                        <a href="./blog-detail.html">
+                                            <img src="./img/blog-8-768x768.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="entry-content-wrapper">
+                                            <div class="entry-header">
+                                                <span class="categories-link"><a href="">Chưa được phân loại</a></span>
+                                                <h3 class="entry-title"><a href="./blog-detail.html">Thay đổi nơi ở của
+                                                        bạn và có được
+                                                        không khí trong lành</a></h3>
+                                            </div>
+                                            <div class="entry-bottom">
+                                                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, giống
+                                                    như những buổi sáng mùa xuân ngọt ngào mà tôi…</p>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <span class="posted-on">
+                                                    <i class="far fa-calendar"></i>
+                                                    <a href="">
+                                                        <time class="entry-date">11/09/2020</time>
+                                                    </a>
+                                                </span>
+                                                <span class="post-author">
+                                                    <i class="far fa-user"></i>
+                                                    Bởi <a href="">admin</a>
+                                                </span>
+                                                <span class="post-comments">
+                                                    <i class="far fa-comments"></i>
+                                                    <a href="">0</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="post-inner">
+                                    <div class="post-thumb">
+                                        <a href="./blog-detail.html">
+                                            <img src="./img/blog-7-768x768.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <div class="entry-content-wrapper">
+                                            <div class="entry-header">
+                                                <span class="categories-link"><a href="">Chưa được phân loại</a></span>
+                                                <h3 class="entry-title"><a href="./blog-detail.html">Thật đáng tiếc khi
+                                                        một câu hỏi thần
+                                                        thoại đã chạy</a>
+                                                </h3>
+                                            </div>
+                                            <div class="entry-bottom">
+                                                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, giống
+                                                    như những buổi sáng mùa xuân ngọt ngào mà tôi…</p>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <span class="posted-on">
+                                                    <i class="far fa-calendar"></i>
+                                                    <a href="">
+                                                        <time class="entry-date">11/09/2020</time>
+                                                    </a>
+                                                </span>
+                                                <span class="post-author">
+                                                    <i class="far fa-user"></i>
+                                                    Bởi <a href="">admin</a>
+                                                </span>
+                                                <span class="post-comments">
+                                                    <i class="far fa-comments"></i>
+                                                    <a href="">0</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination blog-pagi"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OUR BLOG -->
+
+    <!-- BEGIN FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="background-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="footer-col">
+                            <h3 class="footer-home-title">Nhận thông tin cập nhật và hơn thế nữa</h3>
+                            <p class="footer-text">Đăng ký nhận bản tin miễn phí và nhận chiết khấu 20% cho lần đặt
+                                phòng tiếp theo của bạn</p>
+                            <form action="" method="POST" class="form" id="form-1">
+                                <div class="form-group">
+                                    <input id="email" name="email" type="text" placeholder="Email của bạn"
+                                        class="form-control">
+                                </div>
+                                <button class="form-submit">Đăng ký
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footer-col footer-contact">
+                            <h3 class="footer-home-title">hỗ trợ khách hàng</h3>
+                            <p class="footer-text">Liên hệ với nhà cung cấp chỗ ở của bạn.</p>
+                            <a href="tel:096339934">
+                                <i class="fas fa-phone-alt"></i>
+                                +84 - 963 - 339 - 934</a>
+                        </div>
+                        <div class="footer-col footer-follow">
+                            <h3 class="footer-home-title">Theo dõi chúng tôi</h3>
+                            <ul class="footer-social">
+                                <li><a href="#">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="footer-pay">
+                                <img src="./img/footer_2-image-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container pd-container">
+                <div class="row">
+                    <div class="footer-bottom-wrap">
+                        <div class="fb-left">
+                            <p>Bản quyền © 2021 <a href="https://test.takecare.vn/">test.takecare.vn</a>. Đã đăng ký bản
+                                quyền</p>
+                        </div>
+                        <div class="fb-right">
+                            <ul>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Chính sách</a></li>
+                                <li><a href="./about-us.html">Về chúng tôi</a></li>
+                                <li><a href="#">Trợ giúp</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Link jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
